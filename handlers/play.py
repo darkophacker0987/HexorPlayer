@@ -111,13 +111,13 @@ async def play(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>𝗔𝗱 𝗠𝗲 𝗔𝘀 𝗔𝗱𝗺𝗶𝗻 𝗢𝗳 𝗬𝗼𝘂𝗿 𝗚𝗿𝘂𝗼𝗽  𝗙𝗶𝗿𝘀𝘁 ❰ 𝗛𝗲𝘅𝗼𝗿 ❤️ 𝗫𝟯 𝗦𝗺𝗼𝗸𝗲𝗿 🚬 ❱</b>")
+                        "<b>𝗔𝗱 𝗠𝗲 𝗔𝘀 𝗔𝗱𝗺𝗶𝗻 𝗢𝗳 𝗬𝗼𝘂𝗿 𝗚𝗿𝘂𝗼𝗽  𝗙𝗶𝗿𝘀𝘁 ❰ 𝗥𝗶𝗖𝗛𝗔 𝗫 𝗡𝗶𝗧𝗶𝗡 ❱</b>")
                     return
 
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**𝗠𝘂𝘀𝗶𝗰 🎶 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 😎 𝗝𝗼𝗶𝗻𝗲𝗱 𝗧𝗵𝗶𝘀 😉 𝗚𝗿𝘂𝗼𝗽 𝗙𝗼𝗿 𝗣𝗹𝗮𝘆 𝗠𝘂𝘀𝗶𝗰 ❤️🤟**")
+                        message.chat.id, "**𝗠𝘂𝘀𝗶𝗰 🎶 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 😎 𝗝𝗼𝗶𝗻𝗲𝗱 𝗧𝗵𝗶𝘀 😉 𝗚𝗿𝗼𝘂𝗽 𝗙𝗼𝗿 𝗣𝗹𝗮𝘆 𝗠𝘂𝘀𝗶𝗰 ❤️🤟**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -128,7 +128,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>❰𝗛𝗲𝘅𝗼𝗿 ❤️ 𝗫𝟯 𝗦𝗺𝗼𝗸𝗲𝗿 🚬❱ 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗨𝘀𝗲𝗿𝗕𝗼𝘁 𝗜𝘀 𝗡𝗼𝘁 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗖𝗵𝗮𝘁' 𝗔𝘀𝗸 𝗔𝗱𝗺𝗶𝗻 𝗧𝗼 𝗦𝗲𝗻𝗱 /𝗽𝗹𝗮𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗿 𝗙𝗶𝗿𝘀𝘁 𝗧𝗶𝗺𝗲 𝗧𝗼 𝗔𝗱𝗱 𝗜𝘁 😎🤟</i>")
+            f"<i>❰ 𝗥𝗶𝗖𝗛𝗔 𝗫 𝗡𝗶𝗧𝗶𝗡 ❱ 𝗔𝘀𝘀𝗶𝘀𝘁𝗮𝗻𝘁 𝗨𝘀𝗲𝗿𝗕𝗼𝘁 𝗜𝘀 𝗡𝗼𝘁 𝗜𝗻 𝗧𝗵𝗶𝘀 𝗖𝗵𝗮𝘁' 𝗔𝘀𝗸 𝗔𝗱𝗺𝗶𝗻 𝗧𝗼 𝗦𝗲𝗻𝗱 /𝗽𝗹𝗮𝘆 𝗖𝗼𝗺𝗺𝗮𝗻𝗱 𝗙𝗼𝗿 𝗙𝗶𝗿𝘀𝘁 𝗧𝗶𝗺𝗲 𝗧𝗼 𝗔𝗱𝗱 𝗜𝘁 😎🤟</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
@@ -142,7 +142,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/a67094fc4a99bca08114b.jpg"
+        thumb_name = "https://telegra.ph/file/0615f72be4a7497e4e4ac.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -152,7 +152,7 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="❰ 𝗚𝗿𝗼𝘂𝗽 😎❤️🤟 ❱",
-                        url="https://t.me/Prayagraj_Op")
+                        url="https://t.me/bondofbestizz")
                    
                 ]
             ]
@@ -190,7 +190,7 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton(
                             text="❰ 𝗚𝗿𝗼𝘂𝗽 😎❤️🤟 ❱",
-                            url="https://t.me/Prayagraj_Op"),
+                            url="https://t.me/bondofbestizz"),
                         
 
                     ]
@@ -198,7 +198,7 @@ async def play(_, message: Message):
             )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/a67094fc4a99bca08114b.jpg"
+            thumb_name = "https://telegra.ph/file/0615f72be4a7497e4e4ac.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -206,7 +206,7 @@ async def play(_, message: Message):
                         [
                             InlineKeyboardButton(
                             text="❰ 𝗚𝗿𝗼𝘂𝗽 😎❤️🤟 ❱",
-                            url="https://t.me/Prayagraj_Op"),
+                            url="https://t.me/bondofbestizz"),
 
                         ]
                     ]
@@ -220,7 +220,7 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit("✌**𝗪𝗵𝗮𝘁'𝘀 𝗧𝗵𝗲 ❤️ 𝗦𝗼𝗻𝗴 🎶 𝗬𝗼𝘂 😎 𝗪𝗮𝗻𝘁 𝗧𝗼 𝗣𝗹𝗮𝘆 🧿🤟**")
-        await lel.edit("🔎 **𝗙𝗶𝗻𝗱𝗶𝗻𝗴 💫 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 ❤️ ❰𝗛𝗲𝘅𝗼𝗿 ❤️ 𝗫𝟯 𝗦𝗺𝗼𝗸𝗲𝗿 🚬❱...**")
+        await lel.edit("🔎 **𝗙𝗶𝗻𝗱𝗶𝗻𝗴 💫 𝗧𝗵𝗲 𝗦𝗼𝗻𝗴 ❤️ ❰ 𝗥𝗶𝗖𝗛𝗔 𝗫 𝗡𝗶𝗧𝗶𝗡 ❱...**")
         query = message.text.split(None, 1)[1]
         # print(query)
         await lel.edit("🎵 **𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴 𝗦𝗼𝘂𝗻𝗱 🔊**")
@@ -257,7 +257,7 @@ async def play(_, message: Message):
                       
                         InlineKeyboardButton(
                             text="❰ 𝗚𝗿𝗼𝘂𝗽 😎❤️🤟 ❱",
-                            url="https://t.me/Prayagraj_Op"),
+                            url="https://t.me/bondofbestizz"),
 
                     ]
                 ]
@@ -274,7 +274,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png", 
-        caption="**❰𝗛𝗲𝘅𝗼𝗿 ❤️ 𝗫𝟯 𝗦𝗺𝗼𝗸𝗲𝗿 🚬❱ 𝗦𝗼𝗻𝗴 ❤️ 𝗣𝗼𝘀𝗶𝘁𝗶𝗼𝗻 💫🤟** {}".format(
+        caption="**❰ 𝗥𝗶𝗖𝗛𝗔 𝗫 𝗡𝗶𝗧𝗶𝗡 ❱ 𝗦𝗼𝗻𝗴 ❤️ 𝗣𝗼𝘀𝗶𝘁𝗶𝗼𝗻 💫🤟** {}".format(
         position
         ),
         reply_markup=keyboard)
@@ -285,7 +285,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**❰𝗛𝗲𝘅𝗼𝗿 ❤️ 𝗫𝟯 𝗦𝗺𝗼𝗸𝗲𝗿 🚬❱ Now 😄 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗔𝘁 🤟 `{}`...**".format(
+        caption="**❰ 𝗥𝗶𝗖𝗛𝗔 𝗫 𝗡𝗶𝗧𝗶𝗡 ❱ Now 😄 𝗣𝗹𝗮𝘆𝗶𝗻𝗴 📀 𝗔𝘁 🤟 `{}`...**".format(
         message.chat.title
         ), )
         os.remove("final.png")
