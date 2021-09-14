@@ -51,7 +51,7 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**🎵 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆 :- ✨ @Prayagraj_Op ❤️☝️**'
+        rep = '**🎵 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆 :- ✨ @RiCHA_X_NiTiNBOT ❤️☝️**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -59,7 +59,7 @@ def song(client, message):
         message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit('🌸𝗛𝗲𝘅𝗼𝗿 𝗡𝗼𝘁 𝗚𝗶𝘃𝗲 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻 𝗙𝗼𝗿 𝗚𝗶𝘃𝗶𝗻𝗴 𝗬𝗼𝘂 💿 𝗦𝗼𝗻𝗴 𝗙𝗿𝗼𝗺 𝗦𝗲𝗿𝘃𝗲𝗿')
+        m.edit('🌸 𝗣𝗥𝗶𝗡𝗖𝗘 𝗚𝗶𝘃𝗲 𝗣𝗲𝗿𝗺𝗶𝘀𝘀𝗶𝗼𝗻 𝗙𝗼𝗿 𝗚𝗶𝘃𝗶𝗻𝗴 𝗬𝗼𝘂 💿 𝗦𝗼𝗻𝗴 𝗙𝗿𝗼𝗺 𝗦𝗲𝗿𝘃𝗲𝗿')
         print(e)
 
     try:
